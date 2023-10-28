@@ -1,38 +1,205 @@
-.App {
-  text-align: center;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  position: relative;
+  z-index: 9999;
+  padding: 15px !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-text {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-text p {
+  margin: 0px;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #391111;
+  filter: drop-shadow(4px 4px 10px darkred);
+}
+
+.x-letter {
+  font-size: 20px;
+  color: darkred;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.trade-icon>span {
+  background: transparent;
+  padding: 2px 8px;
+  font-size: 15px;
+  border: 1px solid darkred;
+  color: darkred;
+  border-radius: 4px;
+}
+
+.nav-txt {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+}
+
+.nav-txt:hover {
+  color: darkred;
+}
+
+.active {
+  color: darkred;
+  font-weight: bold;
+}
+
+.page-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.user-btn-wrap {
+  display: flex;
+  gap: 25px;
+}
+
+.btn-login {
+  color: #000;
+  font-weight: 600;
+  border: none;
+  background: none;
+}
+
+.btn-signup {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 16px;
+  background-color: darkred;
+  border-radius: 5px;
+  border: none;
+}
+
+.home-wrap {
+  display: flex;
+  justify-content: space-evenly;
+  background: #f7e1e1 /*#f4eded */;
+}
+
+.home-wrap>div {
+  gap: 100px;
+}
+
+.left-subwrap {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.modal-container {
+  background: #e5cbcb;
+  border: 1px solid darkred;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: popup .8s;
+}
+
+@keyframes popup {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.close {
+  font-size: 35px;
+  position: absolute;
+  right: 10px;
+  top: 0px;
   color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.modal-left {
+  border-right: 1px solid darkred;
+  padding: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.input-block input {
+  padding: 14px 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.modal-txt {
+  font-weight: 400;
+  color: darkred;
+  font-size: 30px;
+}
+
+.modal-desc {
+  color: darkslategrey;
+}
+
+.sign-in {
+  text-decoration: none;
+  color: darkred;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.input-label {
+  position: absolute;
+  padding-left: 12px;
+  padding-top: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+::placeholder {
+  color: grey;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.btn-submit {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 16px;
+  background-color: darkred;
+  border-radius: 5px;
+  border: none;
+}
+
+.sign-in::before{
+  content: "\a";
+  white-space: pre;
+}
+
+.modal-right {
+  background: #9e5353;
+}
+
+.modal-right img {
+  width: 100%;
+  height: 100%;
 }
