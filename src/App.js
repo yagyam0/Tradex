@@ -4,6 +4,7 @@ import { Suspense } from 'react';
 import AllRoutes from './Routes/AllRoutes';
 import Loader from './Components/Loader';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Suspense fallback={<Loader />}>
           <AllRoutes />
       </Suspense>
+      <Footer />
     </div>
   );
 }

@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style-type: none !important;
+  padding: 0px !important;
+}
+
 .navbar {
   position: relative;
   z-index: 9999;
@@ -29,10 +38,21 @@
   text-decoration: none;
 }
 
-.trade-icon>span {
+.homepage-content p {
+  color: darkred;
+  font-weight: 400;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.decorated-logo {
   background: transparent;
   padding: 2px 8px;
-  font-size: 15px;
+  font-size: 14px;
   border: 1px solid darkred;
   color: darkred;
   border-radius: 4px;
@@ -65,6 +85,10 @@
   gap: 25px;
 }
 
+.home-wrap {
+  background: #f2e0e0;
+}
+
 .btn-login {
   color: #000;
   font-weight: 600;
@@ -80,16 +104,6 @@
   background-color: darkred;
   border-radius: 5px;
   border: none;
-}
-
-.home-wrap {
-  display: flex;
-  justify-content: space-evenly;
-  background: #f7e1e1 /*#f4eded */;
-}
-
-.home-wrap>div {
-  gap: 100px;
 }
 
 .left-subwrap {
@@ -202,4 +216,61 @@
 .modal-right img {
   width: 100%;
   height: 100%;
+}
+
+.circle-img {
+  width: 100px;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.circular-wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.circular-wrap p {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.dev-category-wrap {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.dev-category-wrap span {
+  width: 50%;
+}
+
+.dev-category-wrap p {
+  font-size: 22px;
+}
+
+footer {
+  padding: 80px;
+  background-color: #f4cfcf;
+  color: #000;
+}
+
+.logo {
+  font-size: 18px;
+}
+
+.link-head {
+  color: darkred;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.link-list a {
+  color: #000;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 15px;
 }

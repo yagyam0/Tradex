@@ -1,11 +1,13 @@
 import React from 'react';
 
-const RoundElement = ({ color, imgUrl, altText }) => {
+const RoundElement = ({ color, imgUrl, altText, }) => {
   return (
-    <div className={`circle-${color}`}>
-        <img src={imgUrl} alt={altText} style={{border: `5px solid ${color}`}} />
+    <div className='dev-category-wrap'>
+        <img src={imgUrl} className='circle-img' alt={altText} style={{border: `2px solid ${color}`}} />
+        <p> {altText} </p>
+        <span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, sit amet consectetur adipisicing elit. Neque, odio!</span>
     </div>
   )
-}
+};
 
 export default RoundElement;
